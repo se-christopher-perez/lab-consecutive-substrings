@@ -1,6 +1,9 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
 
+time complexity: O(N2), because we are looping twice within the function, and it's a loop within 
+a loop
+
 step 1: create an array [] to keep record of the letters
 
 step 2: loop through the string, creating access to its characters starting from element[0]
