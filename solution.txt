@@ -1,2 +1,51 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+step 1: create an array [] to keep record of the letters
+
+step 2: loop through the string, creating access to its characters starting from element[0]
+and then incrementally going through each string i = 0, loop will continue for as long as the length
+of the string string.length, and go through them one by one i++
+
+step 3: loop within the loop, however starting from the second element[1]
+by j = i + 1, same limitations j < string.length, and increasing by 1
+
+we now have access to two points of the string
+
+example: 
+        string:  H E L L O
+        element: 0 1 2 3 4
+                 i j
+
+step 4: using string manipulation slice() we extract each consecutive letter to the very end
+
+example: Loops through all the characters
+        string.slice(i, j) -> "H"
+        string:  H E L L O
+        element: 0 1 2 3 4
+                 i j
+        string.slice(i, j) -> "HE"
+        string:  H E L L O
+        element: 0 1 2 3 4
+                 i   j
+        string.slice(i, j) -> "HEL"
+        string:  H E L L O
+        element: 0 1 2 3 4
+                 i     j
+
+step 5: take the manipulated and wanted strings and record them in our array with push()
+
+step 6: return array outside of the loops
+
+pseudocode:
+
+array = []
+
+for i = 0 i < string i++ (loop 1)
+for i = i + j j < string 1++ (loop 2)
+
+    letters = string.slice(i j)
+
+    array.push
+
+return array
