@@ -39,6 +39,7 @@ step 6: return array outside of the loops
 
 pseudocode:
 
+function(string)
 array = []
 
 for i = 0 i < string i++ (loop 1)
